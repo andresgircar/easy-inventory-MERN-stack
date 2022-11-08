@@ -27,6 +27,7 @@ body header {
     width: 100%;
     position: fixed;
     z-index: 1;
+    transition: all .3s ease;
 }
 
 body header nav {
@@ -72,16 +73,14 @@ body header nav .menu-container ul li a:hover {
     border-bottom: 2px solid var(--sec-blue);
 }
 
-body header nav .menu-container button {
+body header nav .menu-container .login-button {
     background-color: var(--green);
     color: var(--white);
-    padding: 1rem 2rem;
-    border: none;
-    font-family: var(--main-font);
+    padding: 1rem 3rem;
     border-radius: 0.7rem;
     font-size: 1.8rem;
     font-weight: 500;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 /*clases para javascript*/
