@@ -1,0 +1,229 @@
+:root {
+    /*palette*/
+    --main-blue: #263168;
+    --sec-blue: #909DCF;
+    --header-sec-blue: rgba(144, 157, 207, 0.8); 
+    --green: #72B53A;
+    --white: #ffffff;
+    --text-blue: #40476C;
+    /*hero*/
+    --hero-bg: rgba(38, 49, 104, 0.8);
+    /*Font*/
+    --main-font: 'Comfortaa', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--main-font);
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+body header nav {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+body header nav .logo-container {
+    margin: 0.5rem 0;
+}
+
+body header nav .logo-container .normal-logo {
+    background: url('../img/logo_secblue.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 5rem;
+    text-decoration: none;
+    color: transparent;
+}
+
+body header nav .menu-container {
+    display: flex;
+    align-items: center;
+}
+
+body header nav .menu-container ul li {
+    display: inline;
+    list-style: none;
+    font-size: 1.6rem;
+    padding-right: 4rem;
+}
+
+body header nav .menu-container ul li a {
+    text-decoration: none;
+    color: var(--sec-blue);
+}
+
+body header nav .menu-container ul li a:hover {
+    border-bottom: 2px solid var(--sec-blue);
+}
+
+body header nav .menu-container button {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    font-family: var(--main-font);
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*clases para javascript*/
+body header nav .logo-container .scrolled-logo {
+    background: url('../img/mainlogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 5rem;
+    text-decoration: none;
+    color: transparent;
+}
+
+.header-bg {
+    background-color: var(--header-sec-blue);
+    transition: ease-in .5s;
+}
+
+body header nav .menu-container ul li .nav-options {
+    text-decoration: none;
+    color: var(--main-blue);
+}
+
+/*Estilos hero*/
+main {
+    position: relative;
+    top: -8.1rem;
+}
+
+main .hero {
+    width: 100%;
+    height: 71rem;
+    background: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .hero .hero-bg {
+    height: 100%;
+    background: var(--hero-bg);
+    display: flex;
+    align-items: center;
+}
+
+main .hero .hero-bg .title-cta {
+    margin: 0 auto;
+    width: 55rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .hero .hero-bg .title-cta h1 {
+    font-size: 6.4rem;
+    margin: 0;
+    color: var(--sec-blue);
+    font-weight: 500;
+}
+
+main .hero .hero-bg .title-cta a {
+    width: 18rem;
+    margin-top: 3rem;
+    padding: 1.1rem 0;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--green);
+    border-radius: 0.7rem;
+    color: var(--green);
+    font-size: 1.8rem;
+}
+
+main .hero .hero-bg .title-cta a:hover {
+    background: var(--green);
+    color: var(--white);
+    transition: ease-in-out .5s;
+}
+
+/*social media*/
+main .social {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+}
+main .social .border {
+    width: 4rem;
+    height: 22rem;
+    border-top: 2px solid var(--sec-blue);
+    border-right: 2px solid var(--sec-blue);
+    border-bottom: 2px solid var(--sec-blue);
+    border-radius: 0 2rem 2rem 0;
+}
+
+main .social .social-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+main .social .social-icons i {
+    color: var(--sec-blue);
+    margin: 0.5rem 0 0.5rem 1.5rem;
+    font-size: 3.6rem;
+}
+
+/*About styles*/
+main .about-us {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main .about-us h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: var(--main-blue);
+    margin: 5rem 0;
+}
+
+main .about-us p {
+    margin: 0 auto 5rem;
+    width: 80%;
+    font-size: 2rem;
+}
+
+main .about-us .about-cards-cont {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main .about-us .about-cards-cont .about-card {
+    width: 30%;
+}
+
+main .about-us .about-cards-cont .about-card img {
+    width: 100%;
+    height: 17rem;
+}
+
+main .about-us .about-cards-cont .about-card h3 {
+    font-size: 2rem;
+    padding: 2rem 5rem;
+}
