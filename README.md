@@ -1,0 +1,1 @@
+# easy-inventory-MERN-stack
