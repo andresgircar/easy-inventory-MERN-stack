@@ -2,7 +2,7 @@
     /*palette*/
     --main-blue: #263168;
     --sec-blue: #909DCF;
-    --header-sec-blue: rgba(144, 157, 207, 0.8); 
+    --header-sec-blue: rgba(144, 157, 207, 0.9); 
     --green: #72B53A;
     --white: #ffffff;
     --text-blue: #40476C;
@@ -97,7 +97,7 @@ body header nav .logo-container .scrolled-logo {
 
 .header-bg {
     background-color: var(--header-sec-blue);
-    transition: ease-in .5s;
+    transition: all .5s ease-in-out;
 }
 
 body header nav .menu-container ul li .nav-options {
@@ -187,6 +187,11 @@ main .social .social-icons i {
     color: var(--sec-blue);
     margin: 0.5rem 0 0.5rem 1.5rem;
     font-size: 3.6rem;
+    transition: all .3s ease;
+}
+
+main .social .social-icons i:hover {
+    transform: translateX(0.4rem);
 }
 
 /*About styles*/
@@ -222,9 +227,91 @@ main .about-us .about-cards-cont .about-card {
 main .about-us .about-cards-cont .about-card img {
     width: 100%;
     height: 17rem;
+    transition: all .3s ease;
+}
+
+main .about-us .about-cards-cont .about-card img:hover {
+    transform: scale(102%);
 }
 
 main .about-us .about-cards-cont .about-card h3 {
     font-size: 2rem;
     padding: 2rem 5rem;
+    margin: 2rem 0 4rem;
+}
+
+/*Our team styles*/
+main .our-team {
+    width: 100%;
+    height: 55.8rem;
+    background: url('/img/teamImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .our-team .our-team-bg {
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .our-team .our-team-bg .info-container {
+    width: 80%;
+}
+
+main .our-team .our-team-bg .info-container h2 {
+    font-size: 4rem;
+    color: var(--sec-blue);
+}
+
+main .our-team .our-team-bg .info-container .team-cards-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+main .our-team .our-team-bg .info-container .team-cards-cont .member-card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .4s ease-in-out;
+}
+
+main .our-team .our-team-bg .info-container .team-cards-cont .member-card:hover {
+    transform: translateY(-0.3rem);
+}
+
+.info-container .team-cards-cont .member-card img {
+    width: 60%;
+    border-radius: 50%;
+    margin: 2rem 0;
+    border: 4px solid var(--green);
+}
+
+.info-container .team-cards-cont .member-card h3 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: var(--text-blue);
+}
+
+.info-container .team-cards-cont .member-card p {
+    font-size: 1.4rem;
+    color: var(--green);
+    margin: 1rem 0;
+}
+
+.info-container .team-cards-cont .member-card i {
+    font-size: 3rem;
+    color: var(--sec-blue);
+    margin: 0 0.5rem 1.5rem;
+}
+
+.info-container .team-cards-cont .member-card i:hover {
+    color: var(--green);
 }
