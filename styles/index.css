@@ -139,13 +139,14 @@ main .hero .hero-bg .title-cta {
 main .hero .hero-bg .title-cta h1 {
     font-size: 6.4rem;
     margin: 0;
+    padding-top: 5rem;
     color: var(--sec-blue);
     font-weight: 500;
 }
 
 main .hero .hero-bg .title-cta a {
     width: 18rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1.1rem 0;
     text-align: center;
     text-decoration: none;
@@ -166,7 +167,7 @@ main .social {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 40%;
+    top: 30%;
 }
 main .social .border {
     width: 4rem;
