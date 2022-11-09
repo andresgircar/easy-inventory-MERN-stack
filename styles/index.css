@@ -359,6 +359,7 @@ main .prices .price-cards-container {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    position: relative;
 }
 
 .prices .price-cards-container .price-card {
@@ -406,7 +407,7 @@ main .prices .price-cards-container .price-card:nth-child(2) {
     width: 42rem;
     height: 68rem;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.25);;
     overflow: hidden;
 }
