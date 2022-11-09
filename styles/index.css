@@ -243,7 +243,7 @@ main .about-us .about-cards-cont .about-card h3 {
 main .our-team {
     width: 100%;
     height: 55.8rem;
-    background: url('/img/teamImg.jpg');
+    background: url('../img/teamImg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
