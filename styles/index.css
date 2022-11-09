@@ -26,7 +26,7 @@ body {
 body header {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     transition: all .3s ease;
 }
 
@@ -193,6 +193,31 @@ main .social .social-icons i:hover {
     transform: translateX(0.4rem);
 }
 
+/*Scroll to top button*/
+main .upTo {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 3rem 3rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--sec-blue);
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+}
+
+main .upTo i {
+    font-size: 2rem;
+}
+
+main .upTo:hover {
+    background-color: var(--text-blue);
+}
+
 /*About styles*/
 main .about-us {
     width: 80%;
@@ -313,4 +338,113 @@ main .our-team .our-team-bg .info-container .team-cards-cont .member-card:hover 
 
 .info-container .team-cards-cont .member-card i:hover {
     color: var(--green);
+}
+
+/*Prices section styles*/
+main .prices {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .prices h2 {
+    margin-top: 6rem;
+    font-size: 3.6rem;
+    color: var(--main-blue);
+}
+
+main .prices .price-cards-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.prices .price-cards-container .price-card {
+    height: 60rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.prices .price-cards-container .price-card img {
+    width: 22rem;
+    margin: 4rem 0 2rem;
+}
+
+.prices .price-cards-container .price-card h3 {
+    font-size: 2.4rem;
+    color: var(--sec-blue);
+    margin: 1.8rem 0;
+}
+
+.prices .price-cards-container .price-card p {
+    width: 60%;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.prices .price-cards-container .price-card .price {
+    font-size: 6rem;
+    margin: 2rem auto 4rem;
+    color: var(--sec-blue);
+    font-weight: bold;
+}
+
+.prices .price-cards-container .price-card a {
+    width: 22rem;
+    background-color: var(--sec-blue);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.4rem;
+    padding: 1.4rem 4rem 1rem;
+    border-radius: 3rem;
+}
+
+/*main price box style*/
+main .prices .price-cards-container .price-card:nth-child(2) {
+    width: 42rem;
+    height: 68rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.25);;
+    overflow: hidden;
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) img {
+    width: 32rem;
+    margin-top: 6rem;
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) h3 {
+    font-size: 4rem;
+    color: var(--main-blue);
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) p {
+    font-size: 2.4rem;
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) .price {
+    font-size: 6.8rem;
+    color: var(--green);
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) a {
+    background-color: var(--main-blue);
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) .popular {
+    position: absolute;
+    top: 3rem;
+    right: -5rem;
+    width: 21rem;
+    background-color: var(--main-blue);
+    padding: 1rem 0;
+    transform: rotate(45deg);
+}
+
+main .prices .price-cards-container .price-card:nth-child(2) .popular p {
+    font-size: 2rem;
+    color: var(--white);
 }

@@ -1,3 +1,5 @@
+/*Navbar background color onscroll function*/
+
 const header = document.getElementById('HEADER');
 const logo = document.getElementById('LOGO');
 const navbar = document.querySelectorAll('.nav-option');
@@ -24,3 +26,22 @@ function headerScroll(){
 }
 
 window.addEventListener('scroll', headerScroll);
+
+/*Up to top button function */
+
+let button = document.getElementById('upTo');
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 200) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+function topFunction(){
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
