@@ -13,6 +13,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: var(--main-font);
 }
@@ -448,4 +449,122 @@ main .prices .price-cards-container .price-card:nth-child(2) .popular {
 main .prices .price-cards-container .price-card:nth-child(2) .popular p {
     font-size: 2rem;
     color: var(--white);
+}
+
+/*FOOTER STYLES*/
+
+footer {
+    background-color: var(--main-blue);
+}
+
+footer .footer-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8rem 0 2rem;
+    display: flex;
+    border-bottom: 1px solid var(--sec-blue);
+}
+
+footer .footer-content .location-info {
+    width: 40%;
+}
+
+footer .footer-content .location-info img {
+    width: 21rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer-content .location-info p {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+footer .footer-content .location-info .phone, 
+footer .footer-content .location-info .map {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin: 1.4rem 0;
+}
+
+footer .rights, 
+footer .author {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+footer .rights {
+    padding: 2.5rem 0 1.5rem;
+}
+
+footer .author {
+    padding-bottom: 2.5rem;
+}
+
+footer .footer-content .sitemap {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 2rem 0;
+    padding: 2rem 0 0 8rem;
+    border-left: 1px solid var(--sec-blue);
+}
+
+footer .footer-content .siteroutes h3, 
+footer .footer-content .suscription h3{
+    color: var(--green);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+footer .footer-content .siteroutes ul {
+    padding: 0;
+}
+
+footer .footer-content .siteroutes li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+footer .footer-content .siteroutes li a {
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+    padding-bottom: 0.7rem;
+    font-weight: 300;
+}
+
+footer .footer-content .suscription {
+    width: 65%;
+}
+
+footer .footer-content .suscription p {
+    width: 70%;
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+footer .footer-content .suscription #email {
+    width: 20rem;
+    height: 3.2rem;
+    border: 0;
+    margin: 0;
+    background-color: #131A3E;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-content .suscription #button {
+    margin: 0;
+    width: 8.8rem;
+    height: 3.2rem;
+    border: 0;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
 }

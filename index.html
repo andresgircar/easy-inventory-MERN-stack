@@ -20,11 +20,11 @@
             </div>
             <div class="menu-container">
                 <ul>
-                    <li><a href="" class="nav-option">INICIO</a></li>
-                    <li><a href="" class="nav-option">ACERCA</a></li>
-                    <li><a href="" class="nav-option">NOSOTROS</a></li>
-                    <li><a href="" class="nav-option">PRECIOS</a></li>
-                    <li><a href="" class="nav-option">CONTACTO</a></li>
+                    <li><a href="index.html" class="nav-option">INICIO</a></li>
+                    <li><a href="#about" class="nav-option">ACERCA</a></li>
+                    <li><a href="#team" class="nav-option">NOSOTROS</a></li>
+                    <li><a href="#prices" class="nav-option">PRECIOS</a></li>
+                    <li><a href="#footer" class="nav-option">CONTACTO</a></li>
                 </ul>
                 <a href="login.html" class="login-button">LOG IN</a>
             </div>
@@ -48,7 +48,7 @@
             </div>
         </section>
         <button id="upTo" class="upTo" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
-        <section class="about-us">
+        <section class="about-us" id="about">
             <h2>ACERCA DE ¡EASY! INVENTORY</h2>
             <p>Con Easy Inventory tendrás el control de todos tus inventarios con una herramienta práctica que te ayudará a ingresar, actualizar y eliminar cada producto con un registro preciso, fácil y en muy pocos pasos</p>
             <section class="about-cards-cont">
@@ -66,7 +66,7 @@
                 </div>
             </section>
         </section>
-        <section class="our-team">
+        <section class="our-team" id="team">
             <div class="our-team-bg">
                 <div class="info-container">
                     <h2>NUESTRO EQUIPO</h2>
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="prices">
             <h2>PRECIOS</h2>
             <div class="price-cards-container">
                 <div class="price-card">
@@ -130,7 +130,39 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+        <section class="footer-content">
+            <div class="location-info">
+                <img src="img/logo_secblue.png" alt="">
+                <p>CALLE FALSA 123Z</p>
+                <p>BOGOTÁ, DISTRITO CAPITAL</p>
+                <p>COLOMBIA, SOUTH AMERICA</p>
+                <br>
+                <p class="phone">(601) 485 0012</p>
+                <p class="map">MAP / DIRECTIONS</p>
+            </div>
+            <div class="sitemap">
+                <div class="siteroutes">
+                    <h3>NUESTRO SITIO</h3>
+                    <ul>
+                        <li><a href="">INICIO</a></li>
+                        <li><a href="">ACERCA</a></li>
+                        <li><a href="">NOSOTROS</a></li>
+                        <li><a href="">PRECIOS</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                    </ul>
+                </div>
+                <div class="suscription">
+                    <h3>¿QUIERES RECIBIR NUESTAS PROMOS?</h3>
+                    <p>DEJA TU CORREO ELECTRÓNICO Y RECIBE LAS MEJORES PROMOCIONES Y NOTICIAS</p>
+                    <input type="email" name="" id="email" placeholder="Correo electrónico" required>
+                    <input type="submit" id="button" value="ENVIAR">
+                </div>
+            </div>
+        </section>
+        <p class="rights">© DERECHOS RESERVADOS EASY INVENTORY |  2022  | PRIVACIDAD</p>
+        <p class="author">DISEÑO Y DESARROLLO: ANDRÉS GIRALDO</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
