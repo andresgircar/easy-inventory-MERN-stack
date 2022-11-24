@@ -3,7 +3,7 @@
     --main-blue: #263168;
     --sec-blue: #909DCF;
     --darker-blue: #121B46;
-    --header-sec-blue: rgba(144, 157, 207, 0.9); 
+    --header-sec-blue: rgba(144, 157, 207, 0.55); 
     --green: #72B53A;
     --white: #ffffff;
     --text-blue: #40476C;
@@ -87,4 +87,97 @@ main {
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-container {
+    width: 70%;
+    text-align: center;
+}
+
+main .main-container .title-container {
+    color: var(--sec-blue);
+}
+
+main .main-container .title-container h2 {
+    font-size: 3rem;
+    margin: 1.2rem 0;
+}
+
+main .main-container .title-container h2 strong {
+    color: var(--green);
+}
+
+main .main-container .title-container p {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+main .main-container .main-content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+}
+
+main .main-container .main-content a{
+    text-decoration: none;
+}
+
+.first {
+    background: url('../public/myinventory.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 22rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.second {
+    background: url('../public/NewItem.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 22rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.third {
+    background: url('../public/update.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 22rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+main .main-container .main-content .img-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-sec-blue);
+    border-radius: 1rem;
+    transition: all ease 0.3s;
+}
+
+main .main-container .main-content .img-container:hover {
+    background-color: rgba(144, 157, 207, 0.75);
+}
+
+main .main-container .main-content .img-container h3 {
+    font-size: 2.8rem;
+    margin: 0;
+    text-align: left;
+    width: 24rem;
+    color: var(--main-blue);
+    padding: 2rem 0 0 2rem;
+    font-weight: 500;
 }
