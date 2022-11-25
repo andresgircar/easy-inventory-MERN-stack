@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "name": "Pilas recargables",
+            "category": "Accesorios electrónicos",
+            "stock": 15,
+            "location": "Bodega",
+            "unitCost": 8900,
+            "description": "Cargador para pilas recargables, acepta pilas AAA y AA, importado de China, Garantía de 1 año"
+        }
+    ],
+    "users": [
+        {
+            "name": "Andrés",
+            "lastname": "Giraldo",
+            "email": "andresgircar@gmail.com",
+            "role": "user"
+        }
+    ]
+}

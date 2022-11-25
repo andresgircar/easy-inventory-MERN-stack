@@ -12,7 +12,7 @@ function App() {
           </Link>
           <ul>
             <li><Link to="/"><i className="fa-solid fa-house"></i>Inicio</Link></li>
-            <li><Link to="/my-inventory"><i className="fa-solid fa-cart-flatbed"></i>Mi Iventario</Link></li>
+            <li><Link to="/my-inventory"><i className="fa-solid fa-cart-flatbed"></i>Mi Inventario</Link></li>
             <li><Link to="/my-inventory/new-item"><i className="fa-solid fa-puzzle-piece"></i>Nuevo Item</Link></li>
             <li><Link to="/my-inventory/update"><i className="fa-regular fa-pen-to-square"></i>Actualizar</Link></li>
           </ul>

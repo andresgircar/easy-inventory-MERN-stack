@@ -13,12 +13,12 @@ function Home () {
                         <h3>MI INVENTARIO</h3>
                     </div>
                 </Link>
-                <Link to="/my-inventory" className='second'>
+                <Link to="/new-item" className='second'>
                     <div className='img-container'>
                         <h3>NUEVO ITEM</h3>
                     </div>
                 </Link>
-                <Link to="/my-inventory" className='third'>
+                <Link to="/update" className='third'>
                     <div className='img-container'>
                         <h3>ACTUALIZAR / ELIMINAR</h3>
                     </div>
